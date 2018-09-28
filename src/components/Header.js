@@ -3,26 +3,26 @@ import imageHead from '../resources/images/me.png';
 
 const Header = () => (
   <header className="header">
-    <div class="flex-container">
+    <div className="flex-container">
       <h1 id="header-title">Thomas Neal</h1>
       <div>Home</div>
       <div>About</div>
       <div>Posts</div>
 
-      <div class="flex-item" id="header-list">
+      <div className="flex-item" id="header-list">
         <div>
           <a href="https://www.facebook.com/thomas.b.neal" rel="me">
-            <i class="fab fa-facebook big-icon" />
+            <i className="fab fa-facebook big-icon" />
           </a>
         </div>
         <div>
           <a href="https://twitter.com/nealthom" rel="me">
-            <i class="fab fa-twitter-square big-icon" />
+            <i className="fab fa-twitter-square big-icon" />
           </a>
         </div>
         <div>
           <a href="https://github.com/nealthom" rel="me">
-            <i class="fab fa-github-square big-icon" />
+            <i className="fab fa-github-square big-icon" />
           </a>
         </div>
       </div>
