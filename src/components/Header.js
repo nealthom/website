@@ -1,14 +1,33 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import imageHead from '../resources/images/me.png';
 
 const Header = () => (
   <header className="header">
     <div className="flex-container">
       <h1 id="header-title">Thomas Neal</h1>
-      <div>Home</div>
-      <div>About</div>
-      <div>Posts</div>
+      <div>
+        <NavLink
+          to="/"
+          activeClassName="is-active"
+          className="navlink"
+          exact={true}
+        >
+          Home
+        </NavLink>
+        {'|'}
+        <NavLink to="/feed" activeClassName="is-active" className="navlink">
+          MyFeed
+        </NavLink>
+      </div>
 
+      <div
+        className="header-image flex-item"
+        style={{
+          background: `center / cover url(${imageHead})`
+        }}
+      />
       <div className="flex-item" id="header-list">
         <div>
           <a href="https://www.facebook.com/thomas.b.neal" rel="me">
@@ -26,13 +45,6 @@ const Header = () => (
           </a>
         </div>
       </div>
-
-      <div
-        className="header-image flex-item"
-        style={{
-          background: `center / cover url(${imageHead})`
-        }}
-      />
     </div>
   </header>
 );
